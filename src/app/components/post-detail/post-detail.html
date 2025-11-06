@@ -1,0 +1,5 @@
+<div *ngIf="post">
+  <h3>{{ post?.title }}</h3>
+  <p>by {{ post?.firstName }} {{ post?.lastName }}; on {{ post?.dateCreated | date: 'MMM d, yyyy' }}</p>
+  <p>{{ post?.body }}</p>
+</div>
